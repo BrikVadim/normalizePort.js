@@ -1,6 +1,6 @@
 //
 // normalizePort.js
-// Copyright © openApps. All rights reserved.
+// Copyright © Brik Vadim. All rights reserved.
 //
 // Licensed under the MIT License.
 // See License.txt in the project root for license information.
