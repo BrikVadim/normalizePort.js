@@ -8,17 +8,29 @@
 
 //-----------------------------------------------------------------------------
 
-const MIN_PORT      = 1023
-const MAX_PORT      = 65536
-
-const DEFAULT_PORT  = 8080
+// Port.js v1.2.0
+// Library for a check the correctness of port
 
 //-----------------------------------------------------------------------------
 
-module.exports = (port, default_port = DEFAULT_PORT) => {
+// Get suser privileges
+const isRootUser = require('is-root')();
+
+// The port can have a value from 1 to 65536
+// NOTE: To install the port from 1 to 1023, you must have root
+const MIN_PORT      = isRootUser ? 1 : 1023
+const MAX_PORT      = 65536
+
+// If invalid port is returned DEFAULT_PORT
+const DEFAULT_PORT  = 2032
+
+//-----------------------------------------------------------------------------
+
+// Function of checking the correctness of port
+module.exports = port => {
     port = Number.parseInt(port)
 
-    return MIN_PORT < port && port < MAX_PORT ? port : default_port
+    return MIN_PORT < port && port < MAX_PORT ? port : DEFAULT_PORT
 }
 
 //-----------------------------------------------------------------------------
