@@ -1,5 +1,4 @@
 //
-// normalizePort.js
 // Copyright © Brik Vadim. All rights reserved.
 //
 // Licensed under the MIT License.
@@ -8,7 +7,7 @@
 
 //-----------------------------------------------------------------------------
 
-// Port.js v1.2.0
+// normalizePort.js v1.2.0
 // Library for a check the correctness of port
 
 //-----------------------------------------------------------------------------
