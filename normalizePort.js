@@ -12,7 +12,7 @@
 
 //-----------------------------------------------------------------------------
 
-// Get suser privileges
+// Get users privileges
 const isRootUser = require('is-root')();
 
 // The port can have a value from 1 to 65536
