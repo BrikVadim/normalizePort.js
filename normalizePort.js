@@ -22,7 +22,7 @@ const MIN_PORT      = isRootUser ? 1 : 1023
 const MAX_PORT      = 65536
 
 // If invalid port is returned DEFAULT_PORT
-const DEFAULT_PORT  = 2032
+const DEFAULT_PORT  = 3000
 
 //-----------------------------------------------------------------------------
 
