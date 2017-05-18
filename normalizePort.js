@@ -16,7 +16,7 @@
 // Get suser privileges
 const isRootUser = require('is-root')();
 
-// The port can have a value from 1 to 65536
+// The port can have a value from 1 to 65536 (256^2)
 // NOTE: To install the port from 1 to 1023, you must have root
 const MIN_PORT      = isRootUser ? 1 : 1023
 const MAX_PORT      = 65536
